@@ -12,23 +12,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.setUpNavBar()
+    }
+
+    func setUpNavBar() {
         let titleImage = UIImageView(frame: CGRect(x: 0, y: 0, width: 200, height: 40))
         titleImage.image = UIImage(named: "imprintHeader")
         titleImage.contentMode = .ScaleAspectFit
         self.navigationItem.titleView = titleImage
-//        viewController.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"yourimage.png"]];
-//        UIBarButtonItem * item = [[UIBarButtonItem alloc] initWithCustomView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"yourimage2.jpg"]]];
-//        viewController.navigationItem.rightBarButtonItem = item;
-        
-        // Do any additional setup after loading the view, typically from a nib.
+        self.navigationController?.navigationBar.setBottomBorder(UIColor.imprintPurple(), height: 2)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 

@@ -12,6 +12,8 @@
 		4544BACC1CA7446F0009496E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4544BACA1CA7446F0009496E /* Main.storyboard */; };
 		4544BACE1CA7446F0009496E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4544BACD1CA7446F0009496E /* Assets.xcassets */; };
 		4544BAD11CA7446F0009496E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4544BACF1CA7446F0009496E /* LaunchScreen.storyboard */; };
+		4544BAD91CA75E190009496E /* UINavigationBar+Imprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544BAD81CA75E190009496E /* UINavigationBar+Imprint.swift */; };
+		4544BADD1CA7604B0009496E /* UIColor+Imprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544BADC1CA7604B0009496E /* UIColor+Imprint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		4544BACD1CA7446F0009496E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4544BAD01CA7446F0009496E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4544BAD21CA7446F0009496E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4544BAD81CA75E190009496E /* UINavigationBar+Imprint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Imprint.swift"; sourceTree = "<group>"; };
+		4544BADC1CA7604B0009496E /* UIColor+Imprint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Imprint.swift"; path = "Extensions/UIColor+Imprint.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		4544BAC51CA7446F0009496E /* Imprint */ = {
 			isa = PBXGroup;
 			children = (
+				4544BADA1CA75FF40009496E /* Extensions */,
 				4544BAC61CA7446F0009496E /* AppDelegate.swift */,
 				4544BAC81CA7446F0009496E /* ViewController.swift */,
 				4544BACA1CA7446F0009496E /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				4544BAD21CA7446F0009496E /* Info.plist */,
 			);
 			path = Imprint;
+			sourceTree = "<group>";
+		};
+		4544BADA1CA75FF40009496E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4544BAD81CA75E190009496E /* UINavigationBar+Imprint.swift */,
+				4544BADC1CA7604B0009496E /* UIColor+Imprint.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +151,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4544BAC91CA7446F0009496E /* ViewController.swift in Sources */,
+				4544BAD91CA75E190009496E /* UINavigationBar+Imprint.swift in Sources */,
 				4544BAC71CA7446F0009496E /* AppDelegate.swift in Sources */,
+				4544BADD1CA7604B0009496E /* UIColor+Imprint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
